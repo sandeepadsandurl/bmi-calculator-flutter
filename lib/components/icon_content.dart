@@ -1,9 +1,5 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
-
-const labelTextStyle = TextStyle(
-  fontSize: 18,
-  color: Color(0xFF8D8E98),
-);
 
 class IconContent extends StatelessWidget {
   IconContent({this.icon, this.label});
@@ -19,7 +15,7 @@ class IconContent extends StatelessWidget {
           size: 80,
         ),
         SizedBox(height: 10),
-        Text(label, style: labelTextStyle),
+        Text(label, style: kLabelTextStyle),
       ],
     );
   }
